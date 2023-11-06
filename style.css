@@ -1,0 +1,132 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(./img/background-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  height: 80px;
+  margin-block: 30px;
+  /* margin-inline: 50%;
+  transform: translateX(-50%); */
+}
+
+#search__engine {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input__tool,
+.input__area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#job,
+#location {
+  width: 200px;
+  height: 25px;
+  font-family: "Montserrat";
+  font-size: 10pt;
+  padding-left: 10px;
+  margin-left: 10px;
+
+  border-radius: 3px;
+  border: 0px solid #000;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 14px 0px #e5e5e5;
+}
+
+.input__area ion-icon {
+  font-size: 15pt;
+}
+
+#find__button,
+#send__button {
+  font-size: 15pt;
+  color: #1a1a1a;
+  font-family: "Montserrat";
+  font-size: 12pt;
+}
+
+#find__button {
+  font-size: 20pt;
+}
+
+#send__button {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.input ion-icon {
+  color: rgb(4, 4, 4);
+}
+
+#searchList {
+  width: 750px;
+  min-height: 10px;
+
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 20px -10px #000;
+}
+
+ul {
+  padding-block: 20px;
+  padding-left: 20px;
+}
+
+li ion-icon {
+  /* font-weight: bold; */
+  margin-right: 5px;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+
+/* li ion-icon:hover {
+  color: #3ebbf7;
+  cursor: pointer;
+} */
+
+li {
+  color: black;
+  list-style: none;
+  font-family: "Montserrat";
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+/* ---HOVER--- */
+
+#job:hover,
+#location:hover {
+  box-shadow: 0px 4px 20px -10px #000;
+}
+
+#find__button:hover,
+#send__button:hover,
+li:hover,
+li ion-icon:hover {
+  color: #eb7d41;
+  cursor: pointer;
+}
