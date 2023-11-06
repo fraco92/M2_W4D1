@@ -125,11 +125,24 @@ const findJob = function () {
       }
     }
     for (let y = 0; y < jobsFound.length; y++) {
-      ulList.innerHTML += `<li><ion-icon name="add-outline"></ion-icon><b>${jobsFound[y].title}</b> | ${jobsFound[y].location}</li>`;
+      ulList.innerHTML += `<li>
+      <ion-icon name="arrow-redo-outline" title="Share"></ion-icon>
+      <ion-icon onclick="addToFavourite(this)" name="heart-outline" class="add__job" title="Add to favorites"></ion-icon>
+      <b>${jobsFound[y].title}</b> | ${jobsFound[y].location}
+      </li>`;
     }
     if (jobsFound.length === 0) {
       alert("La ricerca non è andata a buon fine.");
     }
+  }
+};
+
+const addToFavourite = function (element) {
+  const currentNameOfIcon = element.getAttribute("name");
+  if (currentNameOfIcon === "heart-outline") {
+    element.setAttribute("name", "heart");
+  } else if (currentNameOfIcon === "heart") {
+    element.setAttribute("name", "heart-outline");
   }
 };
 

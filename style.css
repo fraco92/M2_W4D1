@@ -83,7 +83,7 @@ a {
 }
 
 #searchList {
-  width: 750px;
+  min-width: 750px;
   min-height: 10px;
 
   border-radius: 10px;
@@ -93,11 +93,10 @@ a {
 
 ul {
   padding-block: 20px;
-  padding-left: 20px;
+  padding-inline: 15px;
 }
 
 li ion-icon {
-  /* font-weight: bold; */
   margin-right: 5px;
   color: black;
   transition: color 0.2s ease-in-out;
